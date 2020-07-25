@@ -38,7 +38,8 @@
     "roots/wordpress": "5.4.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "presslabs/stack-mu-plugin": "^0.3.1"
+    "presslabs/stack-mu-plugin": "^0.3.1",
+    "phpunit/phpunit": "4.3.*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.4",

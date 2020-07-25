@@ -78,3 +78,11 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+/**
+ * sample usage of an action to prevent wordpress from autosaving posts.
+ */
+function disableAutoSave(){
+    wp_deregister_script('autosave');
+}
+add_action( 'wp_print_scripts', 'disableAutoSave' );
