@@ -39,7 +39,8 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "presslabs/stack-mu-plugin": "^0.3.1",
-    "phpunit/phpunit": "4.3.*"
+    "phpunit/phpunit": "4.3.*",
+    "monolog/monolog": "^2.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.4",
@@ -66,5 +67,8 @@
     "test": [
       "phpcs"
     ]
-  }
+  },
+    "autoload": {
+        "psr-4": {"Acme\\": "src/"}
+    }
 }
