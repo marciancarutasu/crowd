@@ -36,13 +36,13 @@
             <h4>Displays all posts as list.</h4>
 
             <?php
+            /** The Query
+             * $args parameter can be customized for more complex db queries, ex:
+             * category, post type, number of posts etc. can pe included.
+            **/
             $args = array(
                 'post_type'  => 'post'
             );
-
-            /** The Query sample usage,
-             * $args parameter can be customized for more complex db queries
-            **/
             $the_query = new WP_Query( $args );
             
             // The Loop
